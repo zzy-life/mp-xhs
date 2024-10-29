@@ -3,5 +3,6 @@ module.exports = {
     // 配置路径别名  
     configureWebpack: (config) => {  
         config.resolve.alias['@']=path.resolve(__dirname,"./src");
-    }
+    },
+    transpileDependencies:['@dcloudio/uni-ui']
 }  
